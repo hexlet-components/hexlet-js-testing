@@ -1,6 +1,23 @@
 {
-    "type": "module",
-    "scripts": {
-      "test": "node ./tests/capitalize.test.js"
-    }
+  "name": "hexlet-js-testing",
+  "version": "1.0.0",
+  "description": "[![Hexlet Ltd. logo](https://raw.githubusercontent.com/Hexlet/assets/master/images/hexlet_logo128.png)](https://ru.hexlet.io/pages/about?utm_source=github&utm_medium=link&utm_campaign=hexlet-js-testing)",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hexlet-components/hexlet-js-testing.git"
+  },
+  "author": "Hexlet",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hexlet-components/hexlet-js-testing/issues"
+  },
+  "homepage": "https://github.com/hexlet-components/hexlet-js-testing#readme",
+  "devDependencies": {
+    "jest": "^27.3.1"
   }
+}
