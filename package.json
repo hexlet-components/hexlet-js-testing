@@ -1,7 +1,7 @@
 {
   "name": "hexlet-js-testing",
   "version": "1.0.0",
-  "description": "[![Hexlet Ltd. logo](https://raw.githubusercontent.com/Hexlet/assets/master/images/hexlet_logo128.png)](https://ru.hexlet.io/pages/about?utm_source=github&utm_medium=link&utm_campaign=hexlet-js-testing)",
+  "description": "Hexlet js testing project",
   "main": "index.js",
   "type": "module",
   "scripts": {
