@@ -6,8 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "jest",
-    "lint": "eslint",
-    "lint-fix": "eslint --fix"
+    "lint": "biome check .",
+    "lint-fix": "biome check --write ."
   },
   "repository": {
     "type": "git",
@@ -19,12 +19,12 @@
     "url": "https://github.com/hexlet-components/hexlet-js-testing/issues"
   },
   "homepage": "https://github.com/hexlet-components/hexlet-js-testing#readme",
+  "engines": {
+    "node": ">=26.0"
+  },
   "devDependencies": {
-    "@eslint/js": "^10.0.1",
+    "@biomejs/biome": "^2.2.4",
     "@jest/globals": "^30.4.1",
-    "@stylistic/eslint-plugin-js": "^4.4.1",
-    "eslint": "^10.4.1",
-    "globals": "^17.6.0",
     "jest": "^30.4.2",
     "npm-check-updates": "^22.2.1"
   }
