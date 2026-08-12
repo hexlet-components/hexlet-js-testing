@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "NODE_OPTIONS=--experimental-vm-modules jest",
+    "test": "vitest run",
     "lint": "oxlint --config=.oxlintrc.json .",
     "lint:fix": "oxfmt --ignore-path=.oxfmtignore . && oxlint --config=.oxlintrc.json --fix .",
     "format": "oxfmt --ignore-path=.oxfmtignore .",
@@ -25,11 +25,10 @@
     "node": ">=26.0"
   },
   "devDependencies": {
-    "@jest/globals": "^30.4.1",
-    "jest": "^30.4.2",
     "npm-check-updates": "^22.2.9",
     "oxfmt": "^0.63.0",
-    "oxlint": "^1.78.0"
+    "oxlint": "^1.78.0",
+    "vitest": "^4.1.10"
   },
   "packageManager": "pnpm@11.20.0"
 }
