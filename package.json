@@ -5,9 +5,11 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "jest",
-    "lint": "biome check .",
-    "lint-fix": "biome check --write ."
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest",
+    "lint": "oxlint --config=.oxlintrc.json .",
+    "lint:fix": "oxfmt --ignore-path=.oxfmtignore . && oxlint --config=.oxlintrc.json --fix .",
+    "format": "oxfmt --ignore-path=.oxfmtignore .",
+    "format:check": "oxfmt --ignore-path=.oxfmtignore --check ."
   },
   "repository": {
     "type": "git",
@@ -23,9 +25,11 @@
     "node": ">=26.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.5.2",
     "@jest/globals": "^30.4.1",
     "jest": "^30.4.2",
-    "npm-check-updates": "^22.2.9"
-  }
+    "npm-check-updates": "^22.2.9",
+    "oxfmt": "^0.63.0",
+    "oxlint": "^1.78.0"
+  },
+  "packageManager": "pnpm@11.20.0"
 }

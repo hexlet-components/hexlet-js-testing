@@ -1,11 +1,12 @@
 test:
-	npm run test
+	pnpm --silent test
 
 install:
-	npm i
+	pnpm install
 
 lint:
-	npm run lint
+	pnpm --silent run lint
+	pnpm --silent run format:check
 
 lint-fix:
-	npm run lint-fix
+	pnpm --silent run lint:fix
